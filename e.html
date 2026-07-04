@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPA Bourse | L'excellence sur les marchés financiers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+    /* --- VARIABLES DE COULEURS OPA BOURSE --- */
+:root {
+    --bg-dark: #110b0f;
+    --bg-card: #1c1319; /* Légèrement plus clair que le fond pour détacher les éléments */
+    --text-light: #d2d2d2;
+    --text-white: #ffffff;
+    
+    --primary-gold: #f6a107;
+    --secondary-gold: #e4b365;
+    --accent-gold: #fdb84a;
+    
+    --border-dark: #321502;
+    --border-light: #624421;
+}
+
+/* --- RESET & TYPO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- TYPOGRAPHIE --- */
+h1, h2, h3 {
+    color: var(--text-white);
+    font-weight: 800;
+}
+
+.highlight { color: var(--primary-gold); }
+.text-gradient {
+    background: linear-gradient(90deg, var(--primary-gold), var(--accent-gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- BOUTONS --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-gold);
+    color: var(--bg-dark);
+    border: 2px solid var(--primary-gold);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-gold);
+    box-shadow: 0 4px 15px rgba(246, 161, 7, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-gold);
+    border: 2px solid var(--border-light);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary-gold);
+    background-color: rgba(246, 161, 7, 0.05);
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: rgba(17, 11, 15, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-dark);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color: var(--primary-gold); }
+
+/* --- HERO SECTION --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-subtitle {
+    color: var(--secondary-gold);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Effet de lueur en arrière plan */
+.glow-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(156,115,50,0.15) 0%, rgba(17,11,15,0) 70%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* --- PRICING SECTION --- */
+.pricing {
+    padding: 100px 0;
+    background-color: var(--bg-dark);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 { font-size: 2.5rem; margin-bottom: 15px; }
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.pricing-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-dark);
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-gold);
+}
+
+.pricing-card.popular {
+    background: linear-gradient(145deg, var(--bg-card), #2a1b24);
+    border: 2px solid var(--primary-gold);
+    transform: scale(1.05);
+}
+
+.pricing-card.popular:hover { transform: scale(1.05) translateY(-10px); }
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-gold);
+    color: var(--bg-dark);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.price {
+    font-size: 3rem;
+    color: var(--text-white);
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.features-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-dark);
+    display: flex;
+    align-items: center;
+}
+
+.features-list li::before {
+    content: '✓';
+    color: var(--primary-gold);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* --- ANIMATIONS AU SCROLL (Classes gérées par JS) --- */
+.reveal-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-text">OPA <span class="highlight">BOURSE</span></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#methode">La Méthode</a>
+                <a href="#formations">Formations</a>
+                <a href="#mentors">Mentors</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Rejoindre la communauté</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content reveal-up">
+            <p class="hero-subtitle">📍 Abomey-Calavi, Bénin | L'excellence sur les marchés financiers</p>
+            <h1 class="hero-title">Révélez le <span class="text-gradient">meilleur trader</span> en vous.</h1>
+            <p class="hero-description">
+                Du novice à l'investisseur rentable. Rejoignez une communauté internationale et maîtrisez le Trading, le Forex et la Crypto grâce à un accompagnement sur-mesure par nos experts.
+            </p>
+            <div class="hero-cta">
+                <a href="#formations" class="btn btn-primary btn-large">Découvrir nos programmes</a>
+                <a href="#contact" class="btn btn-outline btn-large">Discuter avec un coach</a>
+            </div>
+        </div>
+        <div class="glow-bg"></div>
+    </section>
+
+    <section id="formations" class="pricing">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2>Investissez en vous. Choisissez votre parcours.</h2>
+                <p>Des programmes adaptés à votre niveau pour des résultats concrets.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card reveal-up" style="transition-delay: 100ms;">
+                    <h3>Coaching Groupé</h3>
+                    <div class="price">250 $</div>
+                    <ul class="features-list">
+                        <li>Initiation en équipe</li>
+                        <li>Sessions de groupe interactives</li>
+                        <li>Accès à la communauté Telegram</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Rejoindre le groupe</a>
+                </div>
+
+                <div class="pricing-card popular reveal-up" style="transition-delay: 200ms;">
+                    <div class="badge">Le choix des pros</div>
+                    <h3>Formation Complète</h3>
+                    <div class="price">500 $</div>
+                    <ul class="features-list">
+                        <li>Programme de A à Z (Forex, Crypto)</li>
+                        <li>Masterclass Mindset & Psychologie</li>
+                        <li>Outils d'analyse gratuits inclus</li>
+                        <li>Gestion avancée des risques</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Démarrer la formation</a>
+                </div>
+
+                <div class="pricing-card reveal-up" style="transition-delay: 300ms;">
+                    <h3>Coaching Privé</h3>
+                    <div class="price">400 $</div>
+                    <ul class="features-list">
+                        <li>Suivi intensif 1-to-1</li>
+                        <li>Ajustement de stratégie personnelle</li>
+                        <li>Accès direct aux mentors</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Réserver ma place</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
