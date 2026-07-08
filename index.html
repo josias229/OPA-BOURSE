@@ -23,18 +23,19 @@
                     },
                     colors: {
                         brand: {
-                            blue: '#110b0f',    /* Re-mapped to Dark Black for old classes */
-                            dark: '#110b0f',
-                            light: '#fdfbf7',   /* Warm light */
+                            blue: '#120b0f',    /* Re-mapped to Dark Black for old classes */
+                            dark: '#120b0f',
+                            light: '#ececeb',   
                             cyan: '#f6a107',    /* Re-mapped to Primary Gold for old classes */
                             primary: '#f6a107', 
-                            violet: '#e4b365',  /* Re-mapped to Light Gold */
-                            secondary: '#e4b365',
+                            violet: '#ddad60',  /* Re-mapped to Light Gold */
+                            secondary: '#ddad60',
+                            gray: '#757575',
                             pink: '#fdb84a',    /* Re-mapped to Bright Yellow */
                             accent: '#fdb84a',
-                            darkbg: '#110b0f',
-                            brown: '#624421',
-                            darkbrown: '#321502',
+                            darkbg: '#120b0f',
+                            brown: '#7f5a23',
+                            darkbrown: '#381a05',
                             trustpilot: '#00B67A'
                         }
                     },
@@ -199,7 +200,7 @@
                     </button>
                     <!-- Mega Menu Dropdown -->
                     <div
-                        class="mega-menu-content absolute left-1/2 -translate-x-1/2 top-full w-[800px] bg-white border border-slate-100 rounded-xl shadow-mega p-6 flex gap-6 mt-1">
+                        class="mega-menu-content absolute left-1/2 -translate-x-1/2 top-full w-[800px] bg-brand-primary/10 border border-brand-primary/20 rounded-xl shadow-mega p-6 flex gap-6 mt-1 backdrop-blur-md">
                         <!-- Sidebar tabs -->
                         <div class="w-1/3 border-r border-slate-100 pr-4 flex flex-col gap-2">
                             <button
@@ -394,63 +395,61 @@
                 nous & partenaires</p>
             <div class="marquee-wrapper">
                 <div class="marquee-content flex gap-16 items-center opacity-60 grayscale px-8">
-                    <div class="text-2xl font-bold font-serif whitespace-nowrap">Forbes</div>
-                    <div class="text-2xl font-bold whitespace-nowrap">Le Point</div>
-                    <div class="text-2xl font-bold tracking-tighter whitespace-nowrap">DEGIRO</div>
-                    <div class="text-2xl font-bold whitespace-nowrap">ProRealTime</div>
-                    <div class="text-2xl font-bold text-orange-600 whitespace-nowrap">AVATRADE</div>
+                    <div class="text-2xl font-bold font-serif whitespace-nowrap">Deriv</div>
+                    <div class="text-2xl font-bold text-orange-600 whitespace-nowrap">Webtrade</div>
                     <!-- Duplicate for infinite loop -->
-                    <div class="text-2xl font-bold font-serif whitespace-nowrap">Forbes</div>
-                    <div class="text-2xl font-bold whitespace-nowrap">Le Point</div>
-                    <div class="text-2xl font-bold tracking-tighter whitespace-nowrap">DEGIRO</div>
-                    <div class="text-2xl font-bold whitespace-nowrap">ProRealTime</div>
-                    <div class="text-2xl font-bold text-orange-600 whitespace-nowrap">AVATRADE</div>
+                    <div class="text-2xl font-bold font-serif whitespace-nowrap">Deriv</div>
+                    <div class="text-2xl font-bold text-orange-600 whitespace-nowrap">Webtrade</div>
+                    <div class="text-2xl font-bold font-serif whitespace-nowrap">Deriv</div>
+                    <div class="text-2xl font-bold text-orange-600 whitespace-nowrap">Webtrade</div>
+                    <div class="text-2xl font-bold font-serif whitespace-nowrap">Deriv</div>
+                    <div class="text-2xl font-bold text-orange-600 whitespace-nowrap">Webtrade</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- À Propos & Vision Section -->
-    <section id="about" class="py-24 bg-brand-light relative">
+    <section id="about" class="py-24 bg-brand-dark relative text-white border-t border-brand-primary/20">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
-                <div class="inline-block px-4 py-1.5 bg-brand-secondary/20 text-brand-brown rounded-full text-sm font-bold mb-4 uppercase tracking-wider">
+                <div class="inline-block px-4 py-1.5 bg-brand-primary text-brand-dark rounded-full text-sm font-bold mb-4 uppercase tracking-wider">
                     À Propos de Nous
                 </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mb-6 tracking-tight">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
                     L'Excellence au service de votre réussite
                 </h2>
-                <p class="text-lg text-slate-600 font-light max-w-3xl mx-auto">
+                <p class="text-lg text-slate-300 font-light max-w-3xl mx-auto">
                     Basée à Abomey-Calavi en République du Bénin, OPA Bourse est une société spécialisée dans le trading des marchés financiers.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6 text-slate-600 font-light leading-relaxed">
+                <div class="space-y-6 text-slate-300 font-medium leading-relaxed">
                     <p>
                         Sous la direction de M. Mardrus Demler LAGNI et de M. Rodolphe Bruneel HOUNGNINHIN, nous concevons et dispensons des programmes de formation, ainsi qu'un accompagnement personnalisé, destinés aux apprenants de tous niveaux : novices, intermédiaires et avancés.
                     </p>
                     <p>
-                        Notre approche pédagogique repose sur trois piliers : une <strong class="text-brand-dark font-semibold">expertise humaine</strong>, des <strong class="text-brand-dark font-semibold">contenus de haute valeur</strong> et des <strong class="text-brand-dark font-semibold">outils performants</strong> mis gracieusement à disposition. 
+                        Notre approche pédagogique repose sur trois piliers : une <strong class="text-brand-primary font-extrabold">expertise humaine</strong>, des <strong class="text-brand-primary font-extrabold">contenus de haute valeur</strong> et des <strong class="text-brand-primary font-extrabold">outils performants</strong> mis gracieusement à disposition. 
                     </p>
                     <p>
                         Nous avons constitué un réseau d'entraide et mobilisé une équipe de coachs dédiés, afin d'assurer un suivi rigoureux et une interaction constante tout au long du parcours. L'accompagnement est pour nous une condition sine qua non à la réussite en trading.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-start gap-4 hover:shadow-md transition">
-                        <div class="w-12 h-12 rounded-xl bg-brand-primary/10 text-brand-primary flex items-center justify-center">
+                    <div class="bg-brand-primary p-8 rounded-3xl shadow-sm border border-brand-primary flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-xl bg-brand-dark/10 text-brand-dark flex items-center justify-center">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </div>
                         <h4 class="text-xl font-bold text-brand-dark">Notre Mission</h4>
-                        <p class="text-sm text-slate-500">Amener chaque apprenant à l'excellence en révélant le meilleur trader en lui grâce à notre expérience et nos méthodes éprouvées.</p>
+                        <p class="text-sm text-brand-dark/80 font-medium">Amener chaque apprenant à l'excellence en révélant le meilleur trader en lui grâce à notre expérience et nos méthodes éprouvées.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 flex flex-col items-start gap-4 hover:shadow-md transition">
-                        <div class="w-12 h-12 rounded-xl bg-brand-secondary/10 text-brand-secondary flex items-center justify-center">
+                    <div class="bg-brand-primary p-8 rounded-3xl shadow-sm border border-brand-primary flex flex-col items-start gap-4 hover:-translate-y-1 transition-transform">
+                        <div class="w-12 h-12 rounded-xl bg-brand-dark/10 text-brand-dark flex items-center justify-center">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         </div>
                         <h4 class="text-xl font-bold text-brand-dark">Notre Vision</h4>
-                        <p class="text-sm text-slate-500">Fédérer, à l'échelle internationale, la plus grande communauté de traders rentables et autonomes.</p>
+                        <p class="text-sm text-brand-dark/80 font-medium">Fédérer, à l'échelle internationale, la plus grande communauté de traders rentables et autonomes.</p>
                     </div>
                 </div>
             </div>
@@ -458,7 +457,7 @@
     </section>
 
     <!-- Methodology Scrolling Section (Exact Replica) -->
-    <section class="relative bg-white" id="methodology-section">
+    <section class="relative bg-brand-light" id="methodology-section">
         <div class="max-w-7xl mx-auto px-4 lg:px-8 py-24 text-center">
             <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mb-4 tracking-tight">Une méthode
                 d'apprentissage conçue pour votre réussite</h2>
@@ -483,11 +482,11 @@
                 </div>
                 <!-- Card 3: Communauté -->
                 <div id="mockup-3" class="absolute inset-0 bg-slate-50 flex items-center justify-center p-0 overflow-hidden transition-opacity duration-700 opacity-0 z-0">
-                    <img src="3.jpeg" alt="Communauté et Mindset" class="w-full h-full object-cover">
+                    <img src="3.jpeg" alt="Communauté et Mindset" class="w-full h-full object-cover scale-[1.15] origin-bottom">
                 </div>
                 <!-- Card 4: Outils -->
                 <div id="mockup-4" class="absolute inset-0 bg-slate-50 flex items-center justify-center p-0 overflow-hidden transition-opacity duration-700 opacity-0 z-0">
-                    <img src="4.jpeg" alt="Ressources et Outils" class="w-full h-full object-cover">
+                    <img src="4.jpeg" alt="Ressources et Outils" class="w-full h-full object-cover scale-[1.15] origin-bottom">
                 </div>
 
                 <!-- Scroll indicator -->
@@ -569,41 +568,63 @@
         </div>
 
         <div id="carousel-container" class="flex overflow-x-auto gap-6 lg:gap-8 px-4 lg:px-8 pb-16 snap-x hide-scrollbars items-center py-8">
-            <!-- Card 1: Coaching Groupé -->
+            <!-- Card 1: Spécialisation Forex -->
             <div class="min-w-[85vw] md:min-w-[340px] max-w-[380px] bg-slate-800/80 border border-slate-700 rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative">
-                <div class="absolute -top-3 left-8 bg-slate-700 text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-slate-600">IDÉAL DÉBUTANT</div>
-                
-                <h3 class="text-2xl font-bold mb-2 text-white">Coaching Groupé</h3>
-                <p class="text-slate-400 text-sm mb-6 font-light">Une dynamique de groupe pour avancer ensemble et maîtriser les bases essentielles.</p>
+                <h3 class="text-2xl font-bold mb-2 text-white">Spécialisation Forex</h3>
+                <p class="text-slate-400 text-sm mb-6 font-light">Guide complet pour analyser et trader les devises les plus volatiles.</p>
                 
                 <div class="mb-8">
                     <div class="flex items-baseline gap-2">
-                        <span class="text-4xl font-extrabold text-white">250$</span>
+                        <span class="text-4xl font-extrabold text-white">150$</span>
                         <span class="text-sm font-normal text-slate-500">/unique</span>
                     </div>
                 </div>
 
                 <ul class="space-y-4 mb-8 flex-1">
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Accès aux bases essentielles</span>
+                        <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Analyse technique avancée</span>
                     </li>
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Sessions de groupe hebdomadaires</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Support communautaire basique</span>
+                        <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Gestion du risque Forex</span>
                     </li>
                 </ul>
 
-                <a href="#" class="w-full block text-center py-4 rounded-xl border border-brand-primary text-brand-primary font-semibold hover:bg-brand-primary hover:text-slate-900 transition-colors duration-300">
+                <a href="#" class="w-full block text-center py-4 rounded-xl border border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-slate-900 transition-colors duration-300">
                     Choisir ce programme
                 </a>
             </div>
 
-            <!-- Card 2: Formation Complète (Highlight) -->
+            <!-- Card 2: Indices Synthétiques -->
+            <div class="min-w-[85vw] md:min-w-[340px] max-w-[380px] bg-slate-800/80 border border-slate-700 rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative">
+                <h3 class="text-2xl font-bold mb-2 text-white">Indices Synthétiques</h3>
+                <p class="text-slate-400 text-sm mb-6 font-light">Maîtrisez les marchés ouverts 24/7 (Boom, Crash, Step Index).</p>
+                
+                <div class="mb-8">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-4xl font-extrabold text-white">150$</span>
+                        <span class="text-sm font-normal text-slate-500">/unique</span>
+                    </div>
+                </div>
+
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Marchés spécifiques 24/7</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Stratégies de rentabilité rapide</span>
+                    </li>
+                </ul>
+
+                <a href="#" class="w-full block text-center py-4 rounded-xl border border-green-400 text-green-400 font-semibold hover:bg-green-400 hover:text-slate-900 transition-colors duration-300">
+                    Choisir ce programme
+                </a>
+            </div>
+
+            <!-- Card 3: Formation Complète (Highlight) -->
             <div class="min-w-[85vw] md:min-w-[360px] max-w-[400px] bg-gradient-to-b from-slate-800 to-brand-darkbg border-2 border-brand-primary rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 shadow-2xl shadow-brand-primary/20 transition-all duration-300 relative transform lg:scale-105 z-10">
                 <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-primary text-slate-900 text-[11px] font-extrabold px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">LE PLUS RECOMMANDÉ</div>
                 
@@ -641,7 +662,41 @@
                 </a>
             </div>
 
-            <!-- Card 3: Coaching Privé -->
+            <!-- Card 4: Coaching Groupé -->
+            <div class="min-w-[85vw] md:min-w-[340px] max-w-[380px] bg-slate-800/80 border border-slate-700 rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative">
+                <div class="absolute -top-3 left-8 bg-slate-700 text-slate-300 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-slate-600">IDÉAL DÉBUTANT</div>
+                
+                <h3 class="text-2xl font-bold mb-2 text-white">Coaching Groupé</h3>
+                <p class="text-slate-400 text-sm mb-6 font-light">Une dynamique de groupe pour avancer ensemble et maîtriser les bases essentielles.</p>
+                
+                <div class="mb-8">
+                    <div class="flex items-baseline gap-2">
+                        <span class="text-4xl font-extrabold text-white">250$</span>
+                        <span class="text-sm font-normal text-slate-500">/unique</span>
+                    </div>
+                </div>
+
+                <ul class="space-y-4 mb-8 flex-1">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Accès aux bases essentielles</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Sessions de groupe hebdomadaires</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-5 h-5 text-brand-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <span class="text-sm text-slate-300">Support communautaire basique</span>
+                    </li>
+                </ul>
+
+                <a href="#" class="w-full block text-center py-4 rounded-xl border border-brand-primary text-brand-primary font-semibold hover:bg-brand-primary hover:text-slate-900 transition-colors duration-300">
+                    Choisir ce programme
+                </a>
+            </div>
+
+            <!-- Card 5: Coaching Privé -->
             <div class="min-w-[85vw] md:min-w-[340px] max-w-[380px] bg-slate-800/80 border border-slate-700 rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative">
                 <div class="absolute -top-3 left-8 bg-brand-secondary text-slate-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-md">SUR MESURE</div>
                 
@@ -674,100 +729,43 @@
                     Réserver ma place
                 </a>
             </div>
-
-            <!-- Card 4: Indices Synthétiques -->
-            <div class="min-w-[85vw] md:min-w-[340px] max-w-[380px] bg-slate-800/80 border border-slate-700 rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative">
-                <h3 class="text-2xl font-bold mb-2 text-white">Indices Synthétiques</h3>
-                <p class="text-slate-400 text-sm mb-6 font-light">Maîtrisez les marchés ouverts 24/7 (Boom, Crash, Step Index).</p>
-                
-                <div class="mb-8">
-                    <div class="flex items-baseline gap-2">
-                        <span class="text-4xl font-extrabold text-white">150$</span>
-                        <span class="text-sm font-normal text-slate-500">/unique</span>
-                    </div>
-                </div>
-
-                <ul class="space-y-4 mb-8 flex-1">
-                    <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Marchés spécifiques 24/7</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Stratégies de rentabilité rapide</span>
-                    </li>
-                </ul>
-
-                <a href="#" class="w-full block text-center py-4 rounded-xl border border-green-400 text-green-400 font-semibold hover:bg-green-400 hover:text-slate-900 transition-colors duration-300">
-                    Choisir ce programme
-                </a>
-            </div>
-
-            <!-- Card 5: Spécialisation Forex -->
-            <div class="min-w-[85vw] md:min-w-[340px] max-w-[380px] bg-slate-800/80 border border-slate-700 rounded-3xl p-8 flex flex-col snap-center hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 relative">
-                <h3 class="text-2xl font-bold mb-2 text-white">Spécialisation Forex</h3>
-                <p class="text-slate-400 text-sm mb-6 font-light">Guide complet pour analyser et trader les devises les plus volatiles.</p>
-                
-                <div class="mb-8">
-                    <div class="flex items-baseline gap-2">
-                        <span class="text-4xl font-extrabold text-white">150$</span>
-                        <span class="text-sm font-normal text-slate-500">/unique</span>
-                    </div>
-                </div>
-
-                <ul class="space-y-4 mb-8 flex-1">
-                    <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Analyse technique avancée</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        <span class="text-sm text-slate-300">Gestion du risque Forex</span>
-                    </li>
-                </ul>
-
-                <a href="#" class="w-full block text-center py-4 rounded-xl border border-blue-400 text-blue-400 font-semibold hover:bg-blue-400 hover:text-slate-900 transition-colors duration-300">
-                    Choisir ce programme
-                </a>
-            </div>
         </div>
     </section>
 
     <!-- Stats / Counters Section -->
-    <section class="py-20 border-b border-slate-200 bg-white">
+    <section class="py-20 border-b border-brand-dark bg-brand-primary">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="p-4">
-                    <div class="text-4xl md:text-6xl font-extrabold text-brand-blue mb-2 counter" data-target="145000">0
+                    <div class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-2"><span class="counter" data-target="100">0</span>+
                     </div>
-                    <div class="text-sm font-semibold text-brand-cyan uppercase tracking-wide">Membres formés</div>
+                    <div class="text-sm font-extrabold text-brand-dark/80 uppercase tracking-wide">Membres formés</div>
                 </div>
                 <div class="p-4">
-                    <div class="text-4xl md:text-6xl font-extrabold text-brand-blue mb-2"><span class="counter"
+                    <div class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-2"><span class="counter"
                             data-target="98">0</span>%</div>
-                    <div class="text-sm font-semibold text-brand-violet uppercase tracking-wide">Taux de satisfaction
+                    <div class="text-sm font-extrabold text-brand-dark/80 uppercase tracking-wide">Taux de satisfaction
                     </div>
                 </div>
                 <div class="p-4">
-                    <div class="text-4xl md:text-6xl font-extrabold text-brand-blue mb-2"><span class="counter"
-                            data-target="3500">0</span>+</div>
-                    <div class="text-sm font-semibold text-brand-trustpilot uppercase tracking-wide">Avis Trustpilot
+                    <div class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-2">Excellent</div>
+                    <div class="text-sm font-extrabold text-brand-dark/80 uppercase tracking-wide">Sur la base de nos membres
                     </div>
                 </div>
                 <div class="p-4">
-                    <div class="text-4xl md:text-6xl font-extrabold text-brand-blue mb-2 counter" data-target="10">0
+                    <div class="text-4xl md:text-6xl font-extrabold text-brand-dark mb-2"><span class="counter" data-target="5">0</span>+
                     </div>
-                    <div class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Années d'expérience</div>
+                    <div class="text-sm font-extrabold text-brand-dark/80 uppercase tracking-wide">Années d'expérience</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Founders Section -->
-    <section class="py-24 bg-white relative border-t border-slate-100">
+    <section class="py-24 bg-brand-light relative border-t border-brand-primary">
         <div class="max-w-7xl mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
-                <div class="inline-block px-4 py-1.5 bg-brand-secondary/20 text-brand-brown rounded-full text-sm font-bold mb-4 uppercase tracking-wider">
+                <div class="inline-block px-4 py-1.5 bg-brand-primary text-brand-dark rounded-full text-sm font-bold mb-4 uppercase tracking-wider">
                     L'Équipe Dirigeante
                 </div>
                 <h2 class="text-3xl md:text-5xl font-extrabold text-brand-dark mb-6 tracking-tight">
@@ -777,7 +775,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <!-- Founder 1 -->
-                <div class="bg-brand-light p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition">
                     <img src="M. Mardrus Demler LAGNI.jpeg" alt="M. Mardrus Demler LAGNI" class="w-full h-[400px] rounded-2xl mb-6 object-cover shadow-md object-top">
                     <h3 class="text-2xl font-bold text-brand-dark mb-2">M. Mardrus Demler LAGNI</h3>
                     <div class="text-brand-primary font-semibold text-sm mb-6 uppercase tracking-wider">Trader Indépendant & Coach</div>
@@ -790,7 +788,7 @@
                 </div>
                 
                 <!-- Founder 2 -->
-                <div class="bg-brand-light p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition">
                     <img src="PHOTO.jpeg" alt="M. Rodolphe Bruneel HOUNGNINHIN" class="w-full h-[400px] rounded-2xl mb-6 object-cover shadow-md object-top">
                     <h3 class="text-2xl font-bold text-brand-dark mb-2">M. Rodolphe Bruneel HOUNGNINHIN</h3>
                     <div class="text-brand-primary font-semibold text-sm mb-6 uppercase tracking-wider">Expert Finance & Logistique</div>
